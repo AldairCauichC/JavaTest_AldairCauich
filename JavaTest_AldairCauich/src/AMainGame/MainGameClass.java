@@ -1,4 +1,8 @@
-
+package AMainGame;
+import CatMouseGame.CatClass;
+import CatMouseGame.MouseClass;
+import SlotMachine.SlotMachineClass;
+import TossCoin.TossGameClass;
 import javax.swing.JOptionPane;
 public class MainGameClass {
 	
@@ -19,9 +23,6 @@ public class MainGameClass {
 						TossGameClass coin = new TossGameClass();
 						for (int i=1 ; i<=10; i++){
 							coin.TossCoin();
-							//System.out.println("Total of Heads: "+coin.getHeads());
-							//System.out.println("Total of Tails: "+coin.getTails());
-							//System.out.println("Total of Toss Done: "+coin.getTossDone());
 							JOptionPane.showMessageDialog(null, "Total of Heads: "+coin.getHeads()+"\nTotal of Tails: "+coin.getTails()+"\nTotal of Toss Done: "+coin.getTossDone(), "Toss Coin Game", JOptionPane.DEFAULT_OPTION, null);
 						}
 						tryAgain = JOptionPane.showConfirmDialog(null, "You want to toss the coin again?", "Toss Coin Game", JOptionPane.YES_NO_OPTION);	
@@ -168,3 +169,4 @@ public class MainGameClass {
 	}
 
 }
+
